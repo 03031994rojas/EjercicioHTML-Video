@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div style="text-align: center;">
+        <br>
+        <button class="miBoton" onclick="playpause()">Play/Pausa</button>
+        <button class="miBoton" onclick="completa()">Completa</button>
+        <button class="miBoton" onclick="normal()">Normal</button>
+        <br>
+        <br>
+        <br>
+        <video id="ejemplo" width="360">
+            <source src="video/VideoSaltoHP.mp4">
+        </video>
+    </div>
+
+    <h4><p style="text-align: center;"><strong>Quieres Volar con nosotros?</strong></p></h4>
+    <p style="text-align: center;">llena el siguiente formulario y registrate.</p>
+    <p style="text-align: center;"><b><a href="formulario.html">Link del formulario</a></b></p>
+    <script>
+        var mi_video = document.getElementById("ejemplo");
+        function playpause() {
+            if (mi_video.paused) {
+                mi_video.play();
+            }
+            else
+            mi_video.pause();
+        }
+
+        function completa() {
+            mi_video.width = 680;
+        }
+
+        function normal() {
+            mi_video.width = 360;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+body {
+    background: url('img/cielo04.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+}
+
+video {
+    border: 5px solid #fbfbfc; 
+    border-radius: 10px;   
+  }
+
+  .miBoton {
+    background-color: #87CEEB;
+    color: white;
+    padding: 5px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px white;
+  }
+  
+  .miBoton:hover {
+    background-color: #87CEEB;
+  }
+  
+  .miBoton:active {
+    background-color: #87CEEB;
+    box-shadow: 0 2px blue;
+    transform: translateY(2px);
+  }
